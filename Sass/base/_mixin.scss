@@ -1,0 +1,22 @@
+@mixin respond-to($breakpoint) {
+  @media (min-width: map-get($breakpoints,$breakpoint)) {
+    @content;
+  }
+}
+
+@mixin circle($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+}
+
+@mixin full-rotate {
+  @keyframes full-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

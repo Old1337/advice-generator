@@ -1,0 +1,11 @@
+@include respond-to("small") {
+  .quote {
+    padding: 2.5rem;
+    width: 550px;
+    place-items: none;
+
+    &_line {
+      background: url("../images/pattern-divider-desktop.svg") no-repeat center;
+    }
+  }
+}
