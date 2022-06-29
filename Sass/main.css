@@ -328,6 +328,12 @@ a {
   display: flex;
 }
 
+.main {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
 .quote {
   position: relative;
   background-color: #323a49;
@@ -348,10 +354,10 @@ a {
 
 .quote_q {
   line-height: 1.4;
+  font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 2rem;
   color: #cee3e9;
-  font-weight: bold;
 }
 
 .quote_line {
@@ -410,7 +416,6 @@ a {
   .quote {
     padding: 2.5rem;
     width: 550px;
-    place-items: none;
   }
   .quote_line {
     background: url("../images/pattern-divider-desktop.svg") no-repeat center;
